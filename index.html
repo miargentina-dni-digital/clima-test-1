@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Aplicación del Clima</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=cloud" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Offside&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ubicacion-hr">BUENOS AIRES / 20:00</div>
+    <div class="MainContainer">
+        <div class="sun">
+        </div>
+        <div class="tempMain">15</div>
+    </div>
+    
+    <div class="estado">cielo limpio</div>
+    <div class="termica">Térmica: 10°C</div>
+    
+    <div class="weekContainer">
+        <table id="weekTable">
+            <tr>
+                <td>HOY</td>
+                <td>VIE</td>
+                <td>SAB</td>
+                <td>DOM</td>
+                <td>LUN</td>
+                <td>MAR</td>
+                <td>MIE</td>
+                <td>JUE</td>
+            </tr>
+            <tr class="icons">
+                <td><img src="icons/sun.png" alt="sun-icon"></td>
+                <td><img src="icons/cloudy-day.png" alt="cloudy-day-icon"></td>
+                <td><img src="icons/heavy-rain.png" alt="heavy-rain-icon"></td>
+                <td><img src="icons/light-rain.png" alt="light-rain-icon"></td>
+                <td><img src="icons/night.png" alt="night-icon"></td>
+                <td><img src="icons/cloud.png" alt="cloud-icon"></td>
+                <td><img src="icons/sun.png" alt="sun-icon"></td>
+                <td><img src="icons/sun.png" alt="sun-icon"></td>
+            </tr>
+            <tr class="max-temp">
+                <td>16</td>
+                <td>14</td>
+                <td>13</td>
+                <td>14</td>
+                <td>14</td>
+                <td>16</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr class="min-temp">
+                <td>11</td>
+                <td>12</td>
+                <td>10</td>
+                <td>6</td>
+                <td>10</td>
+                <td>9</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+        <div id="hourlyTableContainer" style="display:none;">
+            <!-- La tabla horaria se genera con JS -->
+        </div>
+    </div>
+    <script src="sun.js"></script>
+    <script src="backend.js"></script>
+</body>
+</html>
