@@ -1,8 +1,8 @@
 {
   "name": "Mi Argentina",
   "short_name": "Mi Argentina",
-  "start_url": "/test/",
-  "scope": "/test/",
+  "start_url": "/clima-test-1/",
+  "scope": "/clima-test-1/",
   "display": "standalone",
   "background_color": "#3630ba",
   "theme_color": "#3630ba",
